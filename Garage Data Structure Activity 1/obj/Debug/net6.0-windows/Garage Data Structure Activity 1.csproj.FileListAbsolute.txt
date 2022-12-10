@@ -1,0 +1,17 @@
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\bin\Debug\net6.0-windows\Garage Data Structure Activity 1.exe
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\bin\Debug\net6.0-windows\Garage Data Structure Activity 1.deps.json
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\bin\Debug\net6.0-windows\Garage Data Structure Activity 1.runtimeconfig.json
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\bin\Debug\net6.0-windows\Garage Data Structure Activity 1.dll
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\bin\Debug\net6.0-windows\Garage Data Structure Activity 1.pdb
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.csproj.AssemblyReference.cache
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage_Data_Structure_Activity_1.Form1.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.csproj.GenerateResource.cache
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.AssemblyInfoInputs.cache
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.AssemblyInfo.cs
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.csproj.CoreCompileInputs.cache
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.dll
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\refint\Garage Data Structure Activity 1.dll
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.pdb
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\Garage Data Structure Activity 1.genruntimeconfig.cache
+C:\Users\damtr\OneDrive\Desktop\Programs\Garage Data Structure Activity 1\Garage Data Structure Activity 1\obj\Debug\net6.0-windows\ref\Garage Data Structure Activity 1.dll
