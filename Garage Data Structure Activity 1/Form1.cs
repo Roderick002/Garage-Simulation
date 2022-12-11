@@ -67,6 +67,9 @@ namespace Garage_Data_Structure_Activity_1
             {
                 MessageBox.Show("Enter your car's plate number!");
             }
+
+            int Space = 10 - (LbGarage.Items.Count);
+            LblGarageSpace.Text = Space.ToString();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -163,6 +166,16 @@ namespace Garage_Data_Structure_Activity_1
                 BtnGS10.Text = "Garage Space 10";
             }
 
+
+        }
+
+        private void BtnRecentDeparted_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
