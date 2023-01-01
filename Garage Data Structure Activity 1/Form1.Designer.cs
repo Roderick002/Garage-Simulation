@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.LbGarage = new System.Windows.Forms.ListBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.BtnDepart = new System.Windows.Forms.Button();
             this.TbPlateNumber = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -51,19 +51,14 @@
             this.LblAvailableSpace = new System.Windows.Forms.Label();
             this.LblPlateNo = new System.Windows.Forms.Label();
             this.LblGarageSpace = new System.Windows.Forms.Label();
+            this.LbGarage = new System.Windows.Forms.ListBox();
+            this.LvGarage = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // LbGarage
+            // colorDialog1
             // 
-            this.LbGarage.FormattingEnabled = true;
-            this.LbGarage.ItemHeight = 18;
-            this.LbGarage.Location = new System.Drawing.Point(44, 63);
-            this.LbGarage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.LbGarage.Name = "LbGarage";
-            this.LbGarage.Size = new System.Drawing.Size(180, 184);
-            this.LbGarage.TabIndex = 0;
-            this.LbGarage.Visible = false;
+            this.colorDialog1.Tag = "Vehicle\'s Color";
             // 
             // BtnDepart
             // 
@@ -78,6 +73,7 @@
             // 
             // TbPlateNumber
             // 
+            this.TbPlateNumber.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TbPlateNumber.Location = new System.Drawing.Point(48, 449);
             this.TbPlateNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TbPlateNumber.Name = "TbPlateNumber";
@@ -89,7 +85,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.LvGarage);
             this.panel1.Controls.Add(this.BtnGS1);
+            this.panel1.Controls.Add(this.LbGarage);
             this.panel1.Controls.Add(this.BtnGS2);
             this.panel1.Controls.Add(this.BtnGS3);
             this.panel1.Controls.Add(this.BtnGS4);
@@ -99,7 +97,6 @@
             this.panel1.Controls.Add(this.BtnGS8);
             this.panel1.Controls.Add(this.BtnGS9);
             this.panel1.Controls.Add(this.BtnGS10);
-            this.panel1.Controls.Add(this.LbGarage);
             this.panel1.Location = new System.Drawing.Point(17, 32);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
@@ -108,112 +105,123 @@
             // 
             // BtnGS1
             // 
+            this.BtnGS1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS1.Location = new System.Drawing.Point(29, 318);
             this.BtnGS1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS1.Name = "BtnGS1";
             this.BtnGS1.Size = new System.Drawing.Size(216, 27);
             this.BtnGS1.TabIndex = 9;
             this.BtnGS1.Text = "Garage Space 1";
-            this.BtnGS1.UseVisualStyleBackColor = true;
+            this.BtnGS1.UseVisualStyleBackColor = false;
             // 
             // BtnGS2
             // 
+            this.BtnGS2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS2.Location = new System.Drawing.Point(29, 286);
             this.BtnGS2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS2.Name = "BtnGS2";
             this.BtnGS2.Size = new System.Drawing.Size(216, 27);
             this.BtnGS2.TabIndex = 8;
             this.BtnGS2.Text = "Garage Space 2";
-            this.BtnGS2.UseVisualStyleBackColor = true;
+            this.BtnGS2.UseVisualStyleBackColor = false;
             // 
             // BtnGS3
             // 
+            this.BtnGS3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS3.Location = new System.Drawing.Point(29, 253);
             this.BtnGS3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS3.Name = "BtnGS3";
             this.BtnGS3.Size = new System.Drawing.Size(216, 27);
             this.BtnGS3.TabIndex = 7;
             this.BtnGS3.Text = "Garage Space 3";
-            this.BtnGS3.UseVisualStyleBackColor = true;
+            this.BtnGS3.UseVisualStyleBackColor = false;
             // 
             // BtnGS4
             // 
+            this.BtnGS4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS4.Location = new System.Drawing.Point(29, 220);
             this.BtnGS4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS4.Name = "BtnGS4";
             this.BtnGS4.Size = new System.Drawing.Size(216, 27);
             this.BtnGS4.TabIndex = 6;
             this.BtnGS4.Text = "Garage Space 4";
-            this.BtnGS4.UseVisualStyleBackColor = true;
+            this.BtnGS4.UseVisualStyleBackColor = false;
             // 
             // BtnGS5
             // 
+            this.BtnGS5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS5.Location = new System.Drawing.Point(29, 188);
             this.BtnGS5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS5.Name = "BtnGS5";
             this.BtnGS5.Size = new System.Drawing.Size(216, 27);
             this.BtnGS5.TabIndex = 5;
             this.BtnGS5.Text = "Garage Space 5";
-            this.BtnGS5.UseVisualStyleBackColor = true;
+            this.BtnGS5.UseVisualStyleBackColor = false;
             // 
             // BtnGS6
             // 
+            this.BtnGS6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS6.Location = new System.Drawing.Point(29, 156);
             this.BtnGS6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS6.Name = "BtnGS6";
             this.BtnGS6.Size = new System.Drawing.Size(216, 27);
             this.BtnGS6.TabIndex = 4;
             this.BtnGS6.Text = "Garage Space 6";
-            this.BtnGS6.UseVisualStyleBackColor = true;
+            this.BtnGS6.UseVisualStyleBackColor = false;
             // 
             // BtnGS7
             // 
+            this.BtnGS7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS7.Location = new System.Drawing.Point(29, 124);
             this.BtnGS7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS7.Name = "BtnGS7";
             this.BtnGS7.Size = new System.Drawing.Size(216, 27);
             this.BtnGS7.TabIndex = 3;
             this.BtnGS7.Text = "Garage Space 7";
-            this.BtnGS7.UseVisualStyleBackColor = true;
+            this.BtnGS7.UseVisualStyleBackColor = false;
             // 
             // BtnGS8
             // 
+            this.BtnGS8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS8.Location = new System.Drawing.Point(29, 91);
             this.BtnGS8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS8.Name = "BtnGS8";
             this.BtnGS8.Size = new System.Drawing.Size(216, 27);
             this.BtnGS8.TabIndex = 2;
             this.BtnGS8.Text = "Garage Space 8";
-            this.BtnGS8.UseVisualStyleBackColor = true;
+            this.BtnGS8.UseVisualStyleBackColor = false;
             // 
             // BtnGS9
             // 
+            this.BtnGS9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS9.Location = new System.Drawing.Point(29, 59);
             this.BtnGS9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS9.Name = "BtnGS9";
             this.BtnGS9.Size = new System.Drawing.Size(216, 27);
             this.BtnGS9.TabIndex = 1;
             this.BtnGS9.Text = "Garage Space 9";
-            this.BtnGS9.UseVisualStyleBackColor = true;
+            this.BtnGS9.UseVisualStyleBackColor = false;
             // 
             // BtnGS10
             // 
+            this.BtnGS10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnGS10.Location = new System.Drawing.Point(29, 26);
             this.BtnGS10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnGS10.Name = "BtnGS10";
             this.BtnGS10.Size = new System.Drawing.Size(216, 27);
             this.BtnGS10.TabIndex = 0;
             this.BtnGS10.Text = "Garage Space 10";
-            this.BtnGS10.UseVisualStyleBackColor = true;
+            this.BtnGS10.UseVisualStyleBackColor = false;
             // 
             // BtnRecentDeparted
             // 
+            this.BtnRecentDeparted.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnRecentDeparted.Location = new System.Drawing.Point(317, 337);
             this.BtnRecentDeparted.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnRecentDeparted.Name = "BtnRecentDeparted";
             this.BtnRecentDeparted.Size = new System.Drawing.Size(216, 27);
             this.BtnRecentDeparted.TabIndex = 10;
-            this.BtnRecentDeparted.UseVisualStyleBackColor = true;
+            this.BtnRecentDeparted.UseVisualStyleBackColor = false;
             this.BtnRecentDeparted.Click += new System.EventHandler(this.BtnRecentDeparted_Click);
             // 
             // BtnEnter
@@ -237,7 +245,7 @@
             this.LblTitle.Font = new System.Drawing.Font("Snap ITC", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.LblTitle.Location = new System.Drawing.Point(304, 37);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(255, 114);
+            this.LblTitle.Size = new System.Drawing.Size(250, 110);
             this.LblTitle.TabIndex = 12;
             this.LblTitle.Text = "RRY \r\nGARAGE";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,7 +277,7 @@
             // 
             this.LblPlateNo.AutoSize = true;
             this.LblPlateNo.Font = new System.Drawing.Font("Calisto MT", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.LblPlateNo.Location = new System.Drawing.Point(78, 420);
+            this.LblPlateNo.Location = new System.Drawing.Point(73, 424);
             this.LblPlateNo.Name = "LblPlateNo";
             this.LblPlateNo.Size = new System.Drawing.Size(131, 22);
             this.LblPlateNo.TabIndex = 15;
@@ -287,11 +295,30 @@
             this.LblGarageSpace.Text = "10";
             this.LblGarageSpace.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LbGarage
+            // 
+            this.LbGarage.FormattingEnabled = true;
+            this.LbGarage.ItemHeight = 18;
+            this.LbGarage.Location = new System.Drawing.Point(66, 21);
+            this.LbGarage.Name = "LbGarage";
+            this.LbGarage.Size = new System.Drawing.Size(150, 148);
+            this.LbGarage.TabIndex = 19;
+            this.LbGarage.Visible = false;
+            // 
+            // LvGarage
+            // 
+            this.LvGarage.Location = new System.Drawing.Point(65, 197);
+            this.LvGarage.Name = "LvGarage";
+            this.LvGarage.Size = new System.Drawing.Size(151, 148);
+            this.LvGarage.TabIndex = 23;
+            this.LvGarage.UseCompatibleStateImageBehavior = false;
+            this.LvGarage.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 491);
+            this.ClientSize = new System.Drawing.Size(568, 491);
             this.Controls.Add(this.LblGarageSpace);
             this.Controls.Add(this.LblPlateNo);
             this.Controls.Add(this.LblAvailableSpace);
@@ -315,8 +342,6 @@
         }
 
         #endregion
-
-        private ListBox LbGarage;
         private Button BtnDepart;
         private TextBox TbPlateNumber;
         private Panel panel1;
@@ -338,5 +363,8 @@
         private Label LblAvailableSpace;
         private Label LblPlateNo;
         private Label LblGarageSpace;
+        private ColorDialog colorDialog1;
+        private ListBox LbGarage;
+        private ListView LvGarage;
     }
 }
